@@ -18,7 +18,7 @@ This project is a simple web application for processing images using the Flask f
 
 1. Clone the repository:
    ``` bash
-   git clone [https://github.com/yourusername/image-processing-flask.git](https://github.com/HaidukVlad/PKG_LAB_3.git)
+   git clone https://github.com/HaidukVlad/PKG_LAB_3.git
    ```
 2. Navigate to the project directory:
   ``` bash
@@ -74,6 +74,6 @@ This project uses the Flask framework and the Pillow library for image processin
 
 ### Instructions
 
-- Replace `[https://github.com/yourusername/image-processing-flask.git](https://github.com/HaidukVlad/PKG_LAB_3.git)` with your actual repository link.
+- Replace `https://github.com/HaidukVlad/PKG_LAB_3.git` with your actual repository link.
 - Save this content in a file named `README.md` in the root directory of your project.
 - You can also add any additional information or sections as needed.
