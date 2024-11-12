@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Image Processing with Flask and Pillow</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Upload and Process</button>
+    </form>
+    {% if filename %}
+        <h2>Processed Images:</h2>
+        <div>
+            <h3>Low Pass Filter:</h3>
+            <img src="{{ url_for('send_processed_image', filename='low_pass_' + filename) }}" alt="Low Pass">
+        </div>
+        <div>
+            <h3>Global Thresholding:</h3>
+            <img src="{{ url_for('send_processed_image', filename='global_thresh_' + filename) }}" alt="Global Threshold">
+        </div>
+        <div>
+            <h3>Niblack Thresholding:</h3>
+            <img src="{{ url_for('send_processed_image', filename='niblack_' + filename) }}" alt="Niblack Threshold">
+        </div>
+        <div>
+            <h3>Sauvola Thresholding:</h3>
+            <img src="{{ url_for('send_processed_image', filename='sauvola_' + filename) }}" alt="Sauvola Threshold">
+        </div>
+    {% endif %}
+</body>
+</html>
